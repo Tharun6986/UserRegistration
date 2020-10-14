@@ -2,12 +2,12 @@
 echo "Welcome to user registration system using Regex patterns"
 
 ##UserCase3
-echo "Email Address"
+echo "Mobile Number"
 
-read -p "Enter a valid Email address: " Email
-Pattern="^[0-9a-zA-Z]+([-+_.][0-9a-zA-Z]+)?@[0-9a-zA-Z]+.[a-zA-Z]{2,4}([.][a-zA-Z]{2})?$"
+read -p "Enter Mobile number: " MobileNumber
+Pattern="^[0-9]{2} [0-9]{10}$"
 
-if [[ $Email =~ $Pattern ]]
+if [[ $MobileNumber =~ $Pattern ]]
 then
 	echo "Valid"
 else
